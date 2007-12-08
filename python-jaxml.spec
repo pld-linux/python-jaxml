@@ -1,7 +1,7 @@
 %define		module	jaxml
 
 Summary:	Module for automated generation of XML, XHTML or HTML documents
-Summary(pl.UTF-8):	Moduł do automatycznego generowania dokumentów XML, XHTML or HTML
+Summary(pl.UTF-8):	Moduł do automatycznego generowania dokumentów XML, XHTML lub HTML
 Name:		python-%{module}
 Version:	3.01
 Release:	1
