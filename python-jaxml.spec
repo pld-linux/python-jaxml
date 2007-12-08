@@ -6,7 +6,7 @@ Name:		python-%{module}
 Version:	3.01
 Release:	1
 License:	LGPL
-Group:		Development/Languages/Python
+Group:		Libraries/Python
 Source0:	http://www.librelogiciel.com/software/jaxml/tarballs/%{module}-%{version}.tar.gz
 # Source0-md5:	87687c2bb5bceca0f93c53cd600ed9f1
 URL:		http://www.librelogiciel.com/software/jaxml/action_Presentation
