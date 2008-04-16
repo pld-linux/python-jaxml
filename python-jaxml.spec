@@ -12,27 +12,29 @@ Source0:	http://www.librelogiciel.com/software/jaxml/tarballs/%{module}-%{versio
 URL:		http://www.librelogiciel.com/software/jaxml/action_Presentation
 BuildRequires:	python >= 1:2.5
 BuildRequires:	python-devel >= 1:2.5
+BuildRequires:	rpm-pythonprov
+BuildRequires:	rpmbuild(macros) >= 1.219
 %pyrequires_eq	python-modules
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-JAXML is a Python module which makes the automated generation
-of XML, XHTML or HTML documents easy.
+JAXML is a Python module which makes the automated generation of XML,
+XHTML or HTML documents easy.
 
 %description -l pl.UTF-8
-JAXML jest modułem dla pythona dzięki który upraszcza automatyczne
+JAXML jest modułem dla Pythona, który upraszcza automatyczne
 generowanie dokumentów XML, XHTML or HTML.
 
 %prep
 %setup -q -n %{module}-%{version}
 
 %build
-python setup.py build
+%{__python} setup.py build
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-python setup.py install \
+%{__python} setup.py install \
 	--root=$RPM_BUILD_ROOT \
 	--optimize=2
 
