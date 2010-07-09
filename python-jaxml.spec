@@ -4,7 +4,7 @@ Summary:	Module for automated generation of XML, XHTML or HTML documents
 Summary(pl.UTF-8):	Moduł do automatycznego generowania dokumentów XML, XHTML lub HTML
 Name:		python-%{module}
 Version:	3.01
-Release:	3
+Release:	4
 License:	LGPL
 Group:		Libraries/Python
 Source0:	http://www.librelogiciel.com/software/jaxml/tarballs/%{module}-%{version}.tar.gz
