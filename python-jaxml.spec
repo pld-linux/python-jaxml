@@ -1,20 +1,20 @@
 %define		module	jaxml
-
 Summary:	Module for automated generation of XML, XHTML or HTML documents
 Summary(pl.UTF-8):	Moduł do automatycznego generowania dokumentów XML, XHTML lub HTML
 Name:		python-%{module}
-Version:	3.01
-Release:	4
+Version:	3.02
+Release:	1
 License:	LGPL
 Group:		Libraries/Python
-Source0:	http://www.librelogiciel.com/software/jaxml/tarballs/%{module}-%{version}.tar.gz
-# Source0-md5:	87687c2bb5bceca0f93c53cd600ed9f1
+Source0:	http://pypi.python.org/packages/source/j/jaxml/jaxml-%{version}.tar.gz
+# Source0-md5:	1526ccc4468342e3a39af6cebeab3dc8
 URL:		http://www.librelogiciel.com/software/jaxml/action_Presentation
 BuildRequires:	python >= 1:2.5
 BuildRequires:	python-devel >= 1:2.5
 BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.219
 %pyrequires_eq	python-modules
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -33,7 +33,6 @@ generowanie dokumentów XML, XHTML or HTML.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-
 %{__python} setup.py install \
 	--root=$RPM_BUILD_ROOT \
 	--optimize=2
