@@ -11,6 +11,7 @@ Source0:	http://pypi.python.org/packages/source/j/jaxml/jaxml-%{version}.tar.gz
 URL:		http://www.librelogiciel.com/software/jaxml/action_Presentation
 BuildRequires:	python >= 1:2.5
 BuildRequires:	python-devel >= 1:2.5
+BuildRequires:	python-setuptools
 BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.219
 %pyrequires_eq	python-modules
