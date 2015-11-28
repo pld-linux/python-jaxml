@@ -3,7 +3,7 @@ Summary:	Module for automated generation of XML, XHTML or HTML documents
 Summary(pl.UTF-8):	Moduł do automatycznego generowania dokumentów XML, XHTML lub HTML
 Name:		python-%{module}
 Version:	3.02
-Release:	1
+Release:	2
 License:	LGPL
 Group:		Libraries/Python
 Source0:	http://pypi.python.org/packages/source/j/jaxml/jaxml-%{version}.tar.gz
